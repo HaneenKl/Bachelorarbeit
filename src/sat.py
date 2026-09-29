@@ -1,6 +1,11 @@
 from pysat.solvers import Solver
 from itertools import count
 from zimin import is_free_set
+"""
+  SAT-Encoding of Loraithes reduction algorithm for arbitrary patterns:
+  p is unavoidable  <=>  p can be reduced to the empty word by successively deleting free sets.
+  CNF formula is satisfiable  <=>  p is reducible  <=>  p is unavoidable.
+"""
 
 ######################################## encoding of the cnf ############################
 """
